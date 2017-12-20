@@ -3,9 +3,176 @@
 <head>
   <title>Static-Comp-4</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-  <h1>dhit</h1>
+  <h1>Fitness Tracker</h1>
+  <div class="wrapper">
+    <div class="left-container">
+      <div class="calendar">
+          <span class="calendar-header">
+            <div class="calendar-image">
+              <img src="./back.svg" />
+            </div>
+            <span>DECEMBER 2017</span>
+            <div class="calendar-image">
+              <img src="./next.svg" />
+            </div>
+          </span>
+        <table>
+          <tr>
+            <th>S</th>
+            <th>M</th>
+            <th>T</th>
+            <th>W</th>
+            <th>T</th>
+            <th>F</th>
+            <th>S</th>
+          </tr>
+           <tr>
+            <td class="spacer">0</td> 
+            <td class="spacer">0</td>
+            <td class="spacer">0</td>
+            <td class="spacer">0</td>
+            <td class="spacer">0</td>
+            <td class='day-achieved'>1</td>
+            <td>2</td>
+          </tr>
+           <tr>
+            <td class='day-achieved'>3</td>
+            <td>4</td>
+            <td class='day-achieved'>5</td>
+            <td>6</td>
+            <td class='day-achieved'>7</td>
+            <td>8</td>
+            <td class='day-achieved'>9</td>
+          </tr>
+           <tr>
+            <td>10</td>
+            <td class='day-achieved'>11</td>
+            <td>12</td>
+            <td class='day-achieved'>13</td>
+            <td>14</td>
+            <td class='day-achieved'>15</td>
+            <td>16</td>
+          </tr>
+           <tr>
+            <td class='day-achieved'>17</td>
+            <td>18</td>
+            <td class='day-achieved'>19</td>
+            <td class='day-selected'>20</td>
+            <td>21</td>
+            <td>22</td>
+            <td>23</td>
+          </tr>
+           <tr>
+            <td>24</td>
+            <td>25</td>
+            <td>26</td>
+            <td>27</td>
+            <td>28</td>
+            <td>29</td>
+            <td>30</td>
+          </tr>
+           <tr>
+            <td>31</td>
+            <td class="spacer">0</td>
+            <td class="spacer">0</td>
+            <td class="spacer">0</td>
+            <td class="spacer">0</td>
+            <td class="spacer">0</td>
+            <td class="spacer">0</td>
+          </tr>
+        </table>
+      </div>
+      <div class="schedule">
+        <span class="schedule-header">
+          December 20th, 2017
+        </span>
+        <span class="schedule-item">
+          <span class="schedule-title">
+            10:00AM Yoga @ CenterStrength
+          </span>
+         <img class="schedule-icon" src="./success.svg" />
+        </span>
+        <span class="schedule-item">
+          <span class="schedule-title">
+            Night Run w/ Mario
+          </span>
+          <img class="schedule-icon" src="./round-done-button.svg" />
+        </span>
+      </div>
+   </div>
+   <div class="right-container">
+      <div class="goals">
+        <span class="section-header">
+          Goals
+        </span>
+        <span class="goal-bar">
+          <span id="yoga" class="goal-fill">
+            <span class="goal-text">
+            Yoga
+          </span>
+          </span>
+        </span>
+        <span class="goal-bar">
+          <span id="running" class="goal-fill">
+            <span class="goal-text">
+            Running
+          </span>
+          </span>
+        </span>
+         <span class="goal-bar">
+          <span id="total" class="goal-fill">
+            <span class="goal-text">
+            Total
+          </span>
+          </span>
+        </span>
+      </div>
+      <div class="log">
+        <span class="section-header">
+          Log
+        </span>
+        <span class="log-day">
+          <span class="date">
+            December 19, 2017
+          </span>
+          <img class="log-icons" src="./angle-arrow-down.svg" />
+        </span>
+
+        <div class="selected-log-day">
+          <span class="log-day" id="selected">
+            <span class="date">
+             December 19, 2017
+            </span>
+            <img class="log-icons" src="./up-arrow.svg" />
+          </span>
+          <div class="log-day-details">
+            <span>
+              Morning Run
+            </span>
+            <span>
+              1.5 miles
+            </span>
+            <span>
+              Yoga @ SolShine
+            </span>
+            <span>
+              3:30 Yin
+            </span>
+          </div>
+        </div>
+        <span class="log-day">
+          <span class="date">
+            December 15, 2017
+          </span>
+          <img class="log-icons" src="./angle-arrow-down.svg" />
+        </span>
+      </div>
+   <span class='show-more'>show more</span>
+   </div>
+</div>
 </body>
 </html>
